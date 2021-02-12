@@ -7,19 +7,38 @@
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>   
+           
                  
    <body>
     <div class="page-header">
         <h1><a href="/">Meine Labordatenbank</a></h1>
     </div>
+    
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
+           {% block sidebar %}
+            <ul class="sidebar-nav">
+              <li><a href="{% url 'post_list' %}">Home</a></li>
+              <li><a href="">Primer</a></li>
+              <li><a href="">Vektoren</a></li>
+              <li><a href="">Gensequenzen</a></li>
+              <li><a href="">Projekte</a></li>
+              <li><a href="">Bakterienstämme</a></li>
+              <li><a href="">Konstrukte</a></li>
+              <li><a href="">Letzte Aktivitäten</a></li>
+           </ul>
+          {% endblock %}
             </div>
         </div>
+           
+    <div class="Blockinhalt">
+     {% block content %}
+     {% endblock %}
     </div>
+    
+  </div>
+       
 </body>
 
 </html>

@@ -1,20 +1,20 @@
 h1 a, h2 a {
-    color: #C25100;
+    color: #7e8ea7;
     font-family: 'Lobster';
 }
 
 body {
-    padding-left: 15px;
+    padding-left: 220px;
 }
 
 .page-header {
-    background-color: #C25100;
+  /* background-color: #C25100; */
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #7e8ea7;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -52,4 +52,24 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+.sidebar-nav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:  #7e8ea7; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px;
+}
+
+.sidebar-nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  display: block;
 }
